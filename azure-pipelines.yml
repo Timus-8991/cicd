@@ -23,7 +23,6 @@ steps:
   displayName: 'dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
   inputs:
     command: publish
-    publishWebProjects: false
     projects: 'src/SimpleAPI/SimpleAPI.csproj'
     arguments: '--configuration $(BuildConfiguration) '
     zipAfterPublish: true
